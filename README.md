@@ -1,4 +1,16 @@
-Controls for this food chain simulator!
+## Setup
+
+1. [Download and install Processing](https://processing.org/download)
+2. [Download the code](https://github.com/carykh/UtopiaColor/archive/refs/heads/main.zip) and extract it
+3. Open Processing
+4. In Processing click File > Open and select `UtopiaColor.pde` in the folder you extracted the code in
+5. In Processing click Tools > Manage Tools > Libraries and install:
+   - Sound (version 2.4.0 or newer)
+   - VideoExport (search for `hamoid`)
+
+You can now run the project by clicking the run button in Processing
+
+## Controls for this food chain simulator!
 
 | First Header  | Second Header |
 | ------------- | ------------- |
