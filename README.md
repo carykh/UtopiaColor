@@ -1,3 +1,7 @@
+# Utopia
+This is a food chain simulator.
+This version is the implementation with color from [the 3rd video](https://www.youtube.com/watch?v=BQ1CF4hpRkM).
+
 ## Setup
 
 1. [Download and install Processing](https://processing.org/download)
@@ -20,7 +24,7 @@ If you want the exact same dna for all starting species instead of a small sprea
 If you want a color arc, use random(start, end) for x with the starting and ending colors
 If you want a wide arc, use random(in_distance, out_distance) with the inner and outer bonds of the arc
 
-## Controls for this food chain simulator!
+## Controls
 
 | First Header  | Second Header |
 | ------------- | ------------- |
