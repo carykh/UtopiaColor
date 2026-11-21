@@ -6,7 +6,7 @@
 4. In Processing click File > Open and select `UtopiaColor.pde` in the folder you extracted the code in
 5. In Processing click Tools > Manage Tools > Libraries and install:
    - Sound (version 2.4.0 or newer)
-   - VideoExport (search for `hamoid`)
+   - VideoExport (search for `hamoid`). On newer versions, change `import com.hamoid.*;` to `import com.hamoid.processing.videoExport.*;` at line 3 of UtopiaColor.pde
 
 You can now run the project by clicking the run button in Processing
 
