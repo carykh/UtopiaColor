@@ -10,6 +10,16 @@
 
 You can now run the project by clicking the run button in Processing
 
+## Useful information
+
+### Changing starting color
+UtopiaColor.pde line 98 is of the form `float[]dna = {x, y};` where:
+ - `x` is between 0 and 1 the angle of the color
+ - `y` is between 0 and 1 the distance to the center (0 is center, 1 is edge)
+If you want the exact same dna for all starting species instead of a small spread, replace the mutate(...) on the next line by dna
+If you want a color arc, use random(start, end) for x with the starting and ending colors
+If you want a wide arc, use random(in_distance, out_distance) with the inner and outer bonds of the arc
+
 ## Controls for this food chain simulator!
 
 | First Header  | Second Header |
