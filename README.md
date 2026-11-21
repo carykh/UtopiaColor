@@ -33,3 +33,46 @@ If you want a wide arc, use random(in_distance, out_distance) with the inner and
 | 'U' | Hold down U to rotate the camera at a medium speed for cinematic effect |
 | SHIFT | Press SHIFT to toggle whether the camera should rotate at a slow speed for cinematic effect |
 | Mouse Wheel | Zoom in and out |
+
+## Troubleshooting
+
+### The class "SoundFile" does not exist
+You didn't do the [Setup step](#setup) properly. Make sure you install the Sound library.
+
+### The class "VideoExport" does not exist
+You didn't do the [Setup step](#setup) properly. Mase sure you install the VideoExport library.
+
+### The package "com.hamoid" does not exist. You probably are missing a library
+You are on a newer version of the VideoExport package and need to change `import com.hamoid.*;` to `import com.hamoid.processing.videoExport.*;` at line 3 of UtopiaColor.pde
+
+### White Screen
+Change `boolean SAVE_VIDEO = true;` to `boolean SAVE_VIDEO = false;` at line 6 of UtopiaColor.pde
+⚠️ This will prevent the code from making the video file named at line 5.
+
+### RuntimeException: Waited 5000ms for ...
+See [White Screen](#white-screen) just above
+
+### The function "..." does not exist
+You didn't do the [Setup step](#setup) properly. Make sure you extract the code in a folder and open the file from there.
+
+### The game is displaying very wrong
+Add a `pixelDensity(1);` line between lines 83 and 84 of UtopiaColor.pde
+⚠️ This has been reported to not always work. Sometimes only fixing some of the issues
+
+**Before**:
+```java
+void setup() {
+  map = new Map(SIZE);
+```
+**After**:
+```java
+void setup() {
+  pixelDensity(1);
+  map = new Map(SIZE);
+```
+
+### The game is spinning
+See [The game is displaying very wrong](#the-game-is-displaying-very-wrong) just above
+
+### The game has a weird offset
+See [The game is displaying very wrong](#the-game-is-displaying-very-wrong) just above
